@@ -3,6 +3,7 @@ public class Apple implements Item{
 
 	private String name = "Apple";
 	private Double price = 0.0;
+	private int offer = -1;
 
 	
 	
@@ -18,6 +19,11 @@ public class Apple implements Item{
 	}
 
 	@Override
+	public void setOffer(int offer){
+		this.offer = offer;
+	}
+
+	@Override
 	public String getName() {
 		return name;
 	}
@@ -27,6 +33,9 @@ public class Apple implements Item{
 		return price;
 	}
 
-
+	@Override
+	public int getOffer() {
+		return offer;
+	}
 
 }
